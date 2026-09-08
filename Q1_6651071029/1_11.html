@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tạo form và các điều khiển trên form</title>
+</head>
+  <body>
+
+    <form name="DangNhap" id="DangNhap">
+        <h2 align="center">
+            <font color="red">Đăng nhập</font>
+        </h2>
+        <!-- Bảng -->
+        <table border="1" align="center" width="300" cellpadding="5" cellspacing="0">
+            <tr>
+                <td align="left">Mã người dùng</td>
+                <td>
+                    <input type="text" name="MaNguoiDung" id="MaNguoiDung">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Mật khẩu</td>
+                <td>
+                    <input type="password" name="MatKhau" id="MatKhau">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" name="NutDongY" id="NutDongY" value="Đồng ý" onclick="xuLyDangNhap()">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div align="center" id="ThongBao"></div>
+    </form>
+  </body>
+</html>
