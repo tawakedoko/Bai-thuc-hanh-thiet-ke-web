@@ -1,0 +1,7 @@
+body { font-family: "Times New Roman", serif; margin: 20px; }
+table { width: 720px; border: 3px solid #000099; border-collapse: collapse; background: #ffcccc; }
+td { border: 1px solid #000099; font-size: 24px; padding: 4px 6px; }
+td.center { text-align: center; }
+input[type=text] { font-size: 16px; padding: 3px; }
+select { font-size: 16px; }
+input[type=button] { font-size: 16px; padding: 2px 14px; border-radius: 12px; }

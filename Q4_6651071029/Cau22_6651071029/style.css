@@ -1,0 +1,6 @@
+body { font-family: "Times New Roman", serif; font-size: 18px; margin: 20px; }
+.box { width: 420px; border: 1px solid #999; padding: 10px 15px; }
+label { display: inline-block; width: 110px; }
+input[type=text] { width: 250px; padding: 3px; }
+input[type=button] { padding: 3px 10px; margin-right: 8px; }
+#result { display: inline-block; margin-top: 6px; }
