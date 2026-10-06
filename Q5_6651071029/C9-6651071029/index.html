@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Form Validation Exercise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Personal Information</h2>
+  <form id="regForm" novalidate>
+    <table>
+      <tr>
+        <td class="lbl">Enter name*:</td>
+        <td><input type="text" id="name"><span class="error" id="err-name"></span></td>
+      </tr>
+      <tr>
+        <td class="lbl">Sex*:</td>
+        <td>
+          <label><input type="radio" name="sex" value="Male"> Male</label>
+          <label><input type="radio" name="sex" value="Female"> Female</label>
+          <span class="error" id="err-sex"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="lbl">Enter email address*:</td>
+        <td><input type="text" id="email"><span class="error" id="err-email"></span></td>
+      </tr>
+      <tr>
+        <td class="lbl">Enter birthday (MM/DD/YYYY)*:</td>
+        <td><input type="text" id="birthday" placeholder="mm/dd/yyyy"><span class="error" id="err-birthday"></span></td>
+      </tr>
+      <tr>
+        <td class="lbl">Enter street address (line 1)*:</td>
+        <td><input type="text" id="street"><span class="error" id="err-street"></span></td>
+      </tr>
+      <tr>
+        <td class="lbl">Enter city:</td>
+        <td><input type="text" id="city"></td>
+      </tr>
+      <tr>
+        <td class="lbl">Select a region*:</td>
+        <td>
+          <select id="region">
+            <option value="">-- Select --</option>
+            <option>Miền Bắc</option>
+            <option>Miền Trung</option>
+            <option>Miền Nam</option>
+          </select>
+          <span class="error" id="err-region"></span>
+        </td>
+      </tr>
+      <tr>
+        <td class="lbl">Enter 5-digit ZIP code*:</td>
+        <td><input type="text" id="zip" maxlength="10"><span class="error" id="err-zip"></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="submit" id="btnFinish">Finish</button>
+          <button type="button" id="btnClear">Clear</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
